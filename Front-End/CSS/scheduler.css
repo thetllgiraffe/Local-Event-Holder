@@ -1,0 +1,51 @@
+/*Standard Desktop*/
+
+table {
+    border: 0.8rem solid #000;
+    border-top: 3rem solid #000;
+    border-radius: 10px 10px 10px 10px;
+    width: 80%;
+    max-width: 120rem;
+    margin: auto;
+    border-collapse: collapse;
+    display: table;
+    table-layout: fixed;
+}
+
+.month {
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 100%;
+}
+
+th, td {
+    border: 0.4rem solid #000;
+    height: 3rem;
+    font-weight: bold;
+    display: table-cell;
+    width: calc(100% / 8);
+}
+
+tr {
+    display: table-row;
+}
+
+tbody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/*Media Queries*/
+
+/*Mobile*/
+@media (max-width: 570px) or (orientation: portrait) {
+    table {
+        width: 100%;
+    }
+
+    .month {
+        height: 3rem;
+    }
+}
